@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="calendrierpotager.ibito.com.calendrierpotager"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="25" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/pota_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- SplashActivity -->
+        <activity
+            android:name="calendrierpotager.ibito.com.calendrierpotager.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="calendrierpotager.ibito.com.calendrierpotager.MainActivity" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name="calendrierpotager.ibito.com.calendrierpotager.GererActivity" >
+        </activity>
+        <activity android:name="calendrierpotager.ibito.com.calendrierpotager.PhaseActivity" >
+        </activity>
+        <activity android:name="calendrierpotager.ibito.com.calendrierpotager.CalendrierActivity" >
+        </activity>
+        <activity android:name="calendrierpotager.ibito.com.calendrierpotager.Choix_potageActicity" >
+        </activity>
+        <activity android:name="calendrierpotager.ibito.com.calendrierpotager.Liste_potagerActivity" >
+        </activity>
+        <activity android:name="calendrierpotager.ibito.com.calendrierpotager.New_potagerActivity" >
+        </activity>
+        <activity android:name="calendrierpotager.ibito.com.calendrierpotager.AffichageActivity" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
